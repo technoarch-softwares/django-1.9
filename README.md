@@ -47,6 +47,8 @@ cd django-1.9
 
 Find all the TODO comment in code repo
 
+Rename ./django_bootstrap_1_9 Folder with your project name
+
 Replace it with you project name and change environment name in (.env file)
 
 ### Setup the Project
