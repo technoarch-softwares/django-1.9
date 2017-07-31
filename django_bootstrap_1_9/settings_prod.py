@@ -37,7 +37,7 @@ LOGGING = {
         'default': {
             'level':'DEBUG',
             'class':'logging.handlers.RotatingFileHandler',
-            'filename': "{}/logs/django_access.log".format(BASE_DIR),
+            'filename': "{}/logs/django_access.log".format(BASE_DIR),  # TODO: Add File Name
             'maxBytes': 1024*1024*5, # 5 MB
             'backupCount': 5,
             'formatter':'standard',

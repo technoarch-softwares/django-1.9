@@ -25,7 +25,7 @@ else:
         os.path.join(BASE_DIR, "static"),
     ]
 
-OGGING = {
+LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
     'formatters': {
@@ -37,7 +37,7 @@ OGGING = {
         'default': {
             'level':'DEBUG',
             'class':'logging.handlers.RotatingFileHandler',
-            'filename': "{}/logs/django_access.log".format(BASE_DIR),
+            'filename': "{}/logs/django_access.log".format(BASE_DIR), # TODO: Add File Name
             'maxBytes': 1024*1024*5, # 5 MB
             'backupCount': 5,
             'formatter':'standard',

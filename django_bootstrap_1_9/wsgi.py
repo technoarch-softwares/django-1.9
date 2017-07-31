@@ -1,6 +1,5 @@
 """
-WSGI config for django_bootstrap_1_9 project. #Name_change
-
+WSGI config for project.
 It exposes the WSGI callable as a module-level variable named ``application``.
 
 For more information on this file, see
@@ -11,6 +10,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_bootstrap_1_9.settings") #Name_change
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_bootstrap_1_9.settings") # TODO: PROJECT_NAME: change it to your project name
 
 application = get_wsgi_application()
