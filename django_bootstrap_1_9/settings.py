@@ -110,3 +110,17 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'  #put whatever you want that when url is rendered it will be /media/imagename.jpg
+
+
+#Environment Specific Settings file
+config = SafeConfigParser()
+config.read(BASE_DIR + '/.env')
+
+ENV = config.get('current_environment', 'ENV')
+
+if ENV == "prod":
+    from settings_prod import *
+elif ENV == "staging":
+    from settings_staging import *
+else:
+    from settings_local import *

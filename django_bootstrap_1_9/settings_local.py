@@ -1,9 +1,12 @@
-from settings_base import *
+import os
+from ConfigParser import SafeConfigParser
 
-DEBUG = False
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 config = SafeConfigParser()
 config.read(BASE_DIR + '/.env')
+
+DEBUG = False
 
 DATABASES = {
     'default': {
